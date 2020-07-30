@@ -22,5 +22,28 @@ body {
 
 main{
   min-height: 100vh;
-  background-image: linear-gradient(to bottom,);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.75));
+  padding: 3em;
+}
+
+.searchBox {
+  width: 100%;
+  margin: 0 0 12em;
+}
+
+.searchBox .searchBar {
+  display: block;
+  width: 100%;
+  padding: 1em;
+
+  appearance: none;
+  border: none;
+  outline: none;
+  background: rgba(255 255 255 0.5) none;
+  border-radius: 0 0 1em 1em;
+  margin-top: -4em;
+
+  box-shadow: 0 0.25em rgba(0, 0, 0, 0.2);
+  color: #313131;
+  font-size: 1em;
 }
