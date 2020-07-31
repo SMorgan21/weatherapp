@@ -1,3 +1,9 @@
+@font-face {
+  font-family: mexican;
+  src: url(assets/fonts/mexcellent3d.woff);
+  src: url(assets/fonts/mexcellent3d.woff2);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +15,7 @@ body {
 }
 
 .app{
-  background-image: url('./assets/cold.png');
+  background-image: url('./assets/images/cold.png');
   background-size: cover;
   background-position: bottom;
   transition: ease-out 0.4ms;
@@ -17,7 +23,7 @@ body {
 }
 
 .app.warm {
-  background-image: url('./assets/warm.png');
+  background-image: url('./assets/images/warm.png');
 }
 
 main{
@@ -34,7 +40,7 @@ main{
 .searchBox .searchBar {
   display: block;
   width: 100%;
-  padding: 1em;
+  padding: 2.7em 0 1em 1.5em;
 
   appearance: none;
   border: none;
@@ -44,6 +50,64 @@ main{
   margin-top: -4em;
 
   box-shadow: 0 0.25em rgba(0, 0, 0, 0.2);
+
   color: #313131;
-  font-size: 1em;
+  font-size: 1.4em;
+
+  transition: 0.4s ease;
 }
+
+.searchBox .searchBar:focus{
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.locationContainer .location{
+  color: whitesmoke;
+  font-size: 4em;
+  font-weight: 500;
+  text-align: center;
+
+  font-family: mexican, sans-serif;
+  text-shadow: 0.1em 0.1em rgba(50, 50, 70, 1);
+}
+
+.locationContainer .date{
+  padding-top: 0.5em;
+  color: whitesmoke;
+  font-size: 2em;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+
+  text-shadow: 0.05em 0.05em rgba(50, 50, 70, 1);
+}
+
+.weatherBox {
+  text-align: center;
+}
+
+.weatherBox .temp{
+  color: whitesmoke;
+  position: relative;
+  display: inline-block;
+  margin: 0.5em auto;
+
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 0.2em 0.2em;
+
+  padding: 0.5em 0.5em;
+
+  font-size: 6em;
+  text-shadow: 0.05em 0.05em rgba(50, 50, 70, 1);
+  font-weight: 500;
+  box-shadow: 0.05em 0.05em rgba(0, 0, 0, 0.2);
+}
+
+.weatherBox .weather {
+  color: whitesmoke;
+  font-size: 5em;
+  font-weight: 700;
+  text-shadow: 0.05em 0.05em rgba(50, 50, 70, 0.5);
+}
+
+
